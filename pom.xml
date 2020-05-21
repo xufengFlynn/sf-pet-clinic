@@ -38,8 +38,7 @@
         </plugins>
     </build>
 
-
   <scm>
-    <tag>sf-pet-clinic-0.0.1</tag>
+      <developerConnection>scm:git:https://github.com/xufengFlynn/sf-pet-clinic.git</developerConnection>
   </scm>
 </project>
