@@ -14,7 +14,7 @@
     </parent>
     <groupId>flynn.springframework</groupId>
     <artifactId>sf-pet-clinic</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>sf-pet-clinic</name>
     <description>Spring Framework Pet Clinic Project</description>
 
