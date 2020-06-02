@@ -6,6 +6,7 @@ import flynn.springframework.sfpetclinic.services.CrudService;
 import java.util.Set;
 
 public class OwnerServiceMap extends AbstactMapService<Owner, Long> implements CrudService<Owner, Long> {
+    //Use super. This is because OwnerMapService extends AbstractMapService that already has the implementation of finadAll(), So we don't need to again provide an implementation of findAll() in OwnerMapService, but instead, call the findAll() of its superclass (AbstractMapService)
     @Override
     public Set<Owner> findAll() {
         return super.findAll();
