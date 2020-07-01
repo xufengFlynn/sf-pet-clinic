@@ -1,11 +1,11 @@
 package flynn.springframework.sfpetclinic.services.map;
 
 import flynn.springframework.sfpetclinic.model.Owner;
-import flynn.springframework.sfpetclinic.services.CrudService;
+import flynn.springframework.sfpetclinic.services.OwnerService;
 
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstactMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstactMapService<Owner, Long> implements OwnerService {
     //Use super. This is because OwnerMapService extends AbstractMapService that already has the implementation of finadAll(), So we don't need to again provide an implementation of findAll() in OwnerMapService, but instead, call the findAll() of its superclass (AbstractMapService)
     @Override
     public Set<Owner> findAll() {
@@ -30,5 +30,10 @@ public class OwnerServiceMap extends AbstactMapService<Owner, Long> implements C
     @Override
     public void deleteById(Long id) {
         super.deleteById(id);
+    }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
     }
 }

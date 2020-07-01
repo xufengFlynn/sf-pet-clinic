@@ -1,11 +1,11 @@
 package flynn.springframework.sfpetclinic.services.map;
 
 import flynn.springframework.sfpetclinic.model.Pet;
-import flynn.springframework.sfpetclinic.services.CrudService;
+import flynn.springframework.sfpetclinic.services.PetService;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstactMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstactMapService<Pet, Long> implements PetService {
     @Override
     public Set<Pet> findAll() {
         return super.findAll();
