@@ -1,29 +1,30 @@
 package flynn.springframework.sfpetclinic.services.map;
 
-import flynn.springframework.sfpetclinic.model.Speciality;
-import flynn.springframework.sfpetclinic.services.SpecialitiesService;
+import flynn.springframework.sfpetclinic.model.Pet;
+import flynn.springframework.sfpetclinic.services.PetService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
+
 @Service
-public class SpecialityServiceMap extends AbstactMapService<Speciality, Long> implements SpecialitiesService {
+public class PetMapService extends AbstactMapService<Pet, Long> implements PetService {
     @Override
-    public Set<Speciality> findAll() {
+    public Set<Pet> findAll() {
         return super.findAll();
     }
 
     @Override
-    public Speciality findById(Long id) {
+    public Pet findById(Long id) {
         return super.findById(id);
     }
 
     @Override
-    public Speciality save(Speciality object) {
+    public Pet save(Pet object) {
         return super.save(object);
     }
 
     @Override
-    public void delete(Speciality object) {
+    public void delete(Pet object) {
         super.delete(object);
     }
 
