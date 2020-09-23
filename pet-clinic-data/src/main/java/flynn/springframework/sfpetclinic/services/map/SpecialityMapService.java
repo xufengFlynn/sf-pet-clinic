@@ -2,10 +2,12 @@ package flynn.springframework.sfpetclinic.services.map;
 
 import flynn.springframework.sfpetclinic.model.Speciality;
 import flynn.springframework.sfpetclinic.services.SpecialitiesService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 @Service
+@Profile({"default", "map"})
 public class SpecialityMapService extends AbstactMapService<Speciality, Long> implements SpecialitiesService {
     @Override
     public Set<Speciality> findAll() {
